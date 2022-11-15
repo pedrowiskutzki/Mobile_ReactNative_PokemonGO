@@ -1,4 +1,4 @@
-import { View, TouchableOpacity, Text, TextInput, Image, FlatList, StatusBar, Button } from "react-native";
+import { View, TouchableOpacity, Text, TextInput, Image,  StatusBar} from "react-native";
 import { styles } from "./styles";
 import logoPokemon from '../assets/logoPokemon.png';
 import buttonExit from '../assets/buttonExit.png';
@@ -21,7 +21,7 @@ export const Login = () => {
             <Text style={styles.title}>CLUBE DE TREINADORES
             </Text>
             <TextInput style={styles.input} placeholder="Nome de usuário" placeholderTextColor="#c4c4c4" />
-            <TextInput style={styles.input} placeholder="Senha" placeholderTextColor="#c4c4c4" />
+            <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} placeholderTextColor="#c4c4c4" />
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.textButton}>ENTRAR</Text>
             </TouchableOpacity>

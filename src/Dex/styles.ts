@@ -1,52 +1,72 @@
-import { CameraRoll, ImageBackground, Platform, StyleSheet } from "react-native";
+import {StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     containerBackground: {
         flex: 1,
-        backgroundColor: 'red',
+        backgroundColor: '#09FF8A'
     },
     container: {
         backgroundColor: 'white',
         marginHorizontal: 10,
-        marginRight: 12,
         paddingBottom: 500,
     },
     title: {
         flexDirection: "row",
         justifyContent: "space-between",
         marginHorizontal: 40,
-        marginTop: 30,
+        marginTop: 40,
     },
     titleCont: {
         flexDirection: "row",
         justifyContent: "space-between",
         marginHorizontal: 163,
         marginTop: 5,
-        marginRight:40,
+        marginRight:45,
+    },
+    iconePesquisar:{
+        marginTop:-35,
+        marginLeft:135,
+        marginBottom:15
     },
     input: {
-        backgroundColor: "#252b53",
+        backgroundColor: "#C7EBE4",
         color: '#fff',
         borderRadius: 40,
         fontSize: 16,
         padding: 10,
-        paddingHorizontal: 140,
-        marginHorizontal: 20,
+        paddingVertical: 10,
+        paddingHorizontal: 150,
+        marginHorizontal: 10,
         marginTop: 30,
-
     },
     card:{
-        backgroundColor:'green',
-        paddingVertical:20,
-        paddingHorizontal:20,
-        marginTop:10,
+        backgroundColor:'#fff',
+        paddingVertical:4,
+        paddingHorizontal:25,
+        marginTop:2,
         marginLeft:0,
-        marginRight:250,
+        marginRight:0,
+        alignItems:"center",
+        
+    },
+    containerDex:{
+        flexDirection: "row",
+    },
+    iconExit:{
+        width: 70, 
+        height: 70,
+        marginHorizontal:170,
+        marginTop: -120,
     },
     image:{
-        width:100,
-        height:100
+        width:80,
+        height:80
     },
+    healthImage:{
+        width:55,
+        height:10,  
+    },
+
 
 
 
