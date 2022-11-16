@@ -7,8 +7,8 @@ import { Login } from "./src/Login";
 function App() {
  
   return (
-    <Login/>
-    //<Dex/>
+    //<Login/>
+    <Dex/>
   );
 }
 
