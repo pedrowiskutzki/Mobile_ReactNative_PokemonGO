@@ -4,7 +4,12 @@ import logoPokemon from '../assets/logoPokemon.png';
 import buttonExit from '../assets/buttonExit.png';
 import { ImageBackground } from "react-native";
 
-export const Login = () => {
+export const Login = ({ navigation }) => { 
+    const Entrar = () => { navigation.reset({       
+        index: 0,      
+         routes:[{ name: "Dex" }],     
+        });   
+    };
     return (
         <View style={styles.container} >
             <StatusBar
@@ -22,7 +27,7 @@ export const Login = () => {
             </Text>
             <TextInput style={styles.input} placeholder="Nome de usuário" placeholderTextColor="#c4c4c4" />
             <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} placeholderTextColor="#c4c4c4" />
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity onPress={() => Entrar()} style={styles.button}>
                 <Text style={styles.textButton}>ENTRAR</Text>
             </TouchableOpacity>
             <Text style={styles.text}>Esqueceu seu nome de usuário?</Text>
