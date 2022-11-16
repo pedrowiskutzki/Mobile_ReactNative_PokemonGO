@@ -37,7 +37,6 @@ export const Dex = () => {
                         <Text style={{ fontSize: 12, color: '#768988' }}>12/12</Text>
                     </View>
                     <TextInput style={styles.input} placeholder="Procurar" placeholderTextColor="#2a3b3a"
-                        onChangeText={(searchString) => { this.setState({ searchString }) }}
                         underlineColorAndroid="transparent"
                     />
                     <MaterialIcons
@@ -208,7 +207,7 @@ export const Dex = () => {
                     </View>         
                 </View>
             </ScrollView >
-            <View style={styles.footer}>
+            <View>
             <Image source={buttonExit} style={styles.iconExit} />
             </View>
         </View >
